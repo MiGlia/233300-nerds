@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Михаил  Глянцев](https://up.htmlacademy.ru/htmlcss/18/user/233300).
-* Наставник: `Неизвестно`.
+* Наставник:[Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev)
 
 ---
 
