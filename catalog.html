@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Nerds - Каталог</title>
+</head>
+<body>
+  <!--header  -->
+  <header class="main-header">
+    <div class="conteiner">
+      <a class="header-logo">
+        <img src="http://placehold.it/640x70/" width="160" height="65" alt="nerds">
+      </a>
+      <nav class="main-navigation">
+        <ul class="header-menu">
+          <li>
+            <a href="index.html">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a class="header-menu-active" href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="user-menu">
+          <li>
+            <a class="basket" href="#">Вход</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="conteiner">
+    <section class="welcome-block">
+      <!-- <div class="container"> -->
+        <h1 class="shop-title">Магазин готовых шаблонов</h1>
+      <!-- </div> -->
+    </section>
+    <section class="filters">
+      <h2 class="visually-hidden">Рассчет стоимости:</h2>
+      <form class="filter-price" action="#" method="get">
+        <fieldset class="filter-range">
+           <legend class="filter-range-title">Стоимость:</legend>
+        </fieldset>
+        <fieldset>
+           <legend>Сетка:</legend>
+           <ul>
+             <li class="filter-group">
+               <input class="visually-hidden filter-grid filter-grid-radio" type="radio" name="grid-select" value="adaptive" checked>
+                Адаптивная
+              </li>
+              <li class="filter-group">
+                <input class="visually-hidden filter-grid filter-grid-radio" type="radio" name="grid-select" value="fixid">
+                 Фиксированная
+               </li>
+               <li class="filter-group">
+                 <input class="visually-hidden filter-grid filter-grid-radio" type="radio" name="grid-select" value="stretch">
+                  Резиновая
+                </li>
+           </ul>
+        </fieldset>
+        <fieldset>
+           <legend>Особенности:</legend>
+           <ul>
+             <li class="filter-group">
+               <input class="visually-hidden filter-features filter-features-checkbox" type="checkbox" name="slider" checked>
+               Слайдер
+             </li>
+             <li class="filter-group">
+               <input class="visually-hidden filter-features filter-features-checkbox" type="checkbox" name="block-features">
+               Блок преимуществ
+             </li>
+             <li class="filter-group">
+              <input class="visually-hidden filter-features filter-features-checkbox" type="checkbox" name="news" checked>
+              Новости
+             </li>
+             <li class="filter-group">
+             <input class="visually-hidden filter-features filter-features-checkbox" type="checkbox" name="gallery">
+             Галлерея
+            </li>
+            <li class="filter-group">
+            <input class="visually-hidden filter-features filter-features-checkbox" type="checkbox" name="basket">
+            Корзина
+           </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button button">Показать</button>
+      </form>
+    </section>
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог шаблонов</h2>
+      <div class="catalog-sorting">
+        <b>Сортировка:</b>
+        <ul class="result-menu">
+          <li>
+            <a class="result-menu-text result-menu-сurrent" href="#">По цене</a>
+          </li>
+          <li>
+            <a class="result-menu-text result-menu" href="#">По типу</a>
+          </li>
+          <li>
+            <a class="result-menu-text result-menu" href="#">По названию</a>
+          </li>
+        </ul>
+        <ul class="arrow">
+          <li>
+            <a class="arrow-result-menu" href="#" title="По возрастанию">▲</a>
+          </li>
+          <li>
+            <a class="arrow-result-menu сurrent-arrow" href="#" title="По убыванию">▼</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div> -->
+      <ul class="catalog-list">
+        <li class="catalog-item-image">
+          <a href="catalog-item.html">
+              <img src="#" width="360" height="616" alt="Sedona">
+          </a>
+        </li>
+      </ul>
+      <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item"><a>2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+      </ul>
+    <!-- </div> -->
+    </section>
+    <!-- Map & contacts -->
+    <section class="map">
+		<div class="map-image" id="map-canvas"></div>
+		<div class="container">
+			<div class="contacts">
+				<h2 class="contacts-title">Nerds Design Studio</h2>
+				<p>191186, Санкт-Петербург,<br>
+				ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<a class="btn btn-red" href="form.html">Напишите нам</a>
+			</div>
+    </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="conteiner">
+      <section class="footer-social">
+        <a class="sosocial-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="sosocial-btn social-btn-vk" href="#">Фейсбук</a>
+        <a class="sosocial-btn social-btn-vk" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-content">
+        <p><b>Давайте дружить, это выгодно!</b></p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
+  </footer>
+  </body>
+  </html>
