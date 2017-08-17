@@ -8,8 +8,8 @@
   <!--header  -->
   <header class="main-header">
     <div class="conteiner">
-      <a class="header-logo">
-        <img src="http://placehold.it/640x70/" width="160" height="65" alt="nerds">
+      <a href="index.html" class="main-header-logo">
+        <img src="svg-nerds/nerds-logo.svg" width="160" height="65" alt="nerds-logo">
       </a>
       <nav class="main-navigation">
         <ul class="header-menu">
@@ -20,7 +20,7 @@
             <a href="#">Клиенты</a>
           </li>
           <li>
-            <a class="header-menu-active" href="#">Магазин</a>
+            <a class="header-menu-сurrent" href="#">Магазин</a>
           </li>
           <li>
             <a href="#">Контакты</a>
@@ -28,7 +28,7 @@
         </ul>
         <ul class="user-menu">
           <li>
-            <a class="basket" href="#">Вход</a>
+            <a class="basket" href="#">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -40,7 +40,7 @@
         <h1 class="shop-title">Магазин готовых шаблонов</h1>
       <!-- </div> -->
     </section>
-    <section class="filters">
+    <aside class="filters">
       <h2 class="visually-hidden">Рассчет стоимости:</h2>
       <form class="filter-price" action="#" method="get">
         <fieldset class="filter-range">
@@ -90,7 +90,7 @@
         </fieldset>
         <button type="submit" class="filter-button button">Показать</button>
       </form>
-    </section>
+    </aside>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог шаблонов</h2>
       <div class="catalog-sorting">
@@ -117,10 +117,17 @@
       </div>
       <!-- <div> -->
       <ul class="catalog-list">
-        <li class="catalog-item-image">
-          <a href="catalog-item.html">
-              <img src="#" width="360" height="616" alt="Sedona">
-          </a>
+        <li class="catalog-card">
+            <div>
+              <img class="catalog-card-image" src="#" width="360" height="616" alt="Sedona">
+              <div class="catalog-card-deccription">
+                	<h3 class="card-title">
+                      <a href="#" class="item_link">Sedona</a>
+                </h3>
+                  <p class="card-info">Информационный сайт для туристов</p>
+                  <a class="card-price btn">9900 Р.</a>
+              </div>
+            </div>
         </li>
       </ul>
       <ul class="pagination-list">
@@ -131,31 +138,30 @@
       </ul>
     <!-- </div> -->
     </section>
-    <!-- Map & contacts -->
-    <section class="map">
-		<div class="map-image" id="map-canvas"></div>
-		<div class="container">
-			<div class="contacts">
-				<h2 class="contacts-title">Nerds Design Studio</h2>
-				<p>191186, Санкт-Петербург,<br>
-				ул. Б. Конюшенная, д. 19/8</p>
-				<p>тел. +7 (812) 275-75-75</p>
-				<a class="btn btn-red" href="form.html">Напишите нам</a>
-			</div>
-    </div>
-    </section>
   </main>
   <footer class="main-footer">
     <div class="conteiner">
-      <section class="footer-social">
-        <a class="sosocial-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="sosocial-btn social-btn-vk" href="#">Фейсбук</a>
-        <a class="sosocial-btn social-btn-vk" href="#">Инстаграм</a>
+      <div class="map">
+        <img src="http://placehold.it/640x70/" width="1200" height="416" alt="Map">
+      </div>
+      <section class="footer-contact">
+        <h2 class="contacts-title">Nerds Design Studio</h2>
+        <p>191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn btn-red" href="form.html">Напишите нам</a>
       </section>
-      <section class="footer-content">
+      <section class="footer-social">
+        <div class="footer-social-content">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-vk" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-vk" href="#">Инстаграм</a>
+      </div>
+      <div class="footer-social-slogan">
         <p><b>Давайте дружить, это выгодно!</b></p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-      </section>
+      </div>
+    </section>
     </div>
   </footer>
   </body>
