@@ -35,31 +35,42 @@
     </div>
   </header>
   <main class="conteiner">
-    <section class="welcome-block">
       <!-- <div class="container"> -->
+    <section class="welcome-block">
         <h1 class="shop-title">Магазин готовых шаблонов</h1>
-      <!-- </div> -->
     </section>
+      <!-- блок фильтров начало -->
     <aside class="filters">
       <h2 class="visually-hidden">Рассчет стоимости:</h2>
       <form class="filter-price" action="#" method="get">
         <fieldset class="filter-range">
            <legend class="filter-range-title">Стоимость:</legend>
-        </fieldset>
+           <!-- <div class="range-controls">
+             <div class="scale">
+               <div class="bar"></div>
+             </div>
+             <div class="toggle min-toggle"></div>
+             <div class="toggle max-toggle"></div>
+           </div> -->
+           <!-- <div class="price-group">
+             <label for="minprice">От<input type="text" name="minprice" id="minprice" value="0"></label>
+             <label for="maxprice">До<input type="text" name="maxprice" id="maxprice" value="15000"></label>
+           </div> -->
+         </fieldset>
         <fieldset>
            <legend>Сетка:</legend>
            <ul>
              <li class="filter-group">
-               <input class="visually-hidden filter-grid filter-grid-radio" type="radio" name="grid-select" value="adaptive" checked>
-                Адаптивная
+               <input class="visually-hidden filter-grid filter-grid-radio" id="select-adaptive" type="radio" name="grid-select" checked>
+               <label class="circle-icon" for="adaptive">Адаптивная</label>
               </li>
               <li class="filter-group">
-                <input class="visually-hidden filter-grid filter-grid-radio" type="radio" name="grid-select" value="fixid">
-                 Фиксированная
+                <input class="visually-hidden filter-grid filter-grid-radio" id="select-fixid" type="radio" name="grid-select">
+                <label class="circle-icon" for="select-fixid">Фиксированная</label>
                </li>
                <li class="filter-group">
-                 <input class="visually-hidden filter-grid filter-grid-radio" type="radio" name="grid-select" value="stretch">
-                  Резиновая
+                 <input class="visually-hidden filter-grid filter-grid-radio" id="select-stretch" type="radio" name="grid-select" disabled>>
+                 <label class="circle-icon" for="stretch">Резиновая</label>
                 </li>
            </ul>
         </fieldset>
@@ -67,30 +78,31 @@
            <legend>Особенности:</legend>
            <ul>
              <li class="filter-group">
-               <input class="visually-hidden filter-features filter-features-checkbox" type="checkbox" name="slider" checked>
-               Слайдер
+               <input class="visually-hidden filter-features filter-features-checkbox" id="select-slider" type="checkbox" name="slider" checked>
+               <lable class="icon-box" for="select-slider">Слайдер</label>
              </li>
              <li class="filter-group">
-               <input class="visually-hidden filter-features filter-features-checkbox" type="checkbox" name="block-features">
-               Блок преимуществ
+               <input class="visually-hidden filter-features filter-features-checkbox"  id="select-block-features" type="checkbox" name="block-features">
+               <label class="icon-box" for="select-block-features">Блок преимуществ</label>
              </li>
              <li class="filter-group">
-              <input class="visually-hidden filter-features filter-features-checkbox" type="checkbox" name="news" checked>
-              Новости
+              <input class="visually-hidden filter-features filter-features-checkbox" id="select-news" type="checkbox" name="news" checked>
+              <label class="icon-box" for="select-news">Новости</label>
              </li>
              <li class="filter-group">
-             <input class="visually-hidden filter-features filter-features-checkbox" type="checkbox" name="gallery">
-             Галлерея
+             <input class="visually-hidden filter-features filter-features-checkbox" id="select-gallery" type="checkbox" name="gallery">
+             <label class="icon-box" for="select-gallery">Галлерея</label>
             </li>
             <li class="filter-group">
-            <input class="visually-hidden filter-features filter-features-checkbox" type="checkbox" name="basket">
-            Корзина
+            <input class="visually-hidden filter-features filter-features-checkbox" id="select-basket" type="checkbox" name="basket">
+            <label class="icon-box" for="select-basket">Корзина</labtl>
            </li>
           </ul>
         </fieldset>
         <button type="submit" class="filter-button button">Показать</button>
       </form>
     </aside>
+    <!-- блок фильтров конец -->
     <section class="catalog">
       <h2 class="visually-hidden">Каталог шаблонов</h2>
       <div class="catalog-sorting">
@@ -119,12 +131,62 @@
       <ul class="catalog-list">
         <li class="catalog-card">
             <div>
-              <img class="catalog-card-image" src="#" width="360" height="616" alt="Sedona">
+              <img class="catalog-card-image" src="img/site-sedona.jpg" width="360" height="616" alt="Sedona">
               <div class="catalog-card-deccription">
                 	<h3 class="card-title">
                       <a href="#" class="item_link">Sedona</a>
                  </h3>
                   <p class="card-info">Информационный сайт для туристов</p>
+                  <a class="card-price btn">9900 Р.</a>
+              </div>
+            </div>
+            <div>
+              <img class="catalog-card-image" src="img/site-pink.jpg" width="360" height="616" alt="Sedona">
+              <div class="catalog-card-deccription">
+                	<h3 class="card-title">
+                      <a href="#" class="item_link">Pink App</a>
+                 </h3>
+                  <p class="card-info">Продуктовый лендинг приложения для iOS и Android</p>
+                  <a class="card-price btn">9900 Р.</a>
+              </div>
+            </div>
+            <div>
+              <img class="catalog-card-image" src="img/site-barbershop.jpg" width="360" height="616" alt="Sedona">
+              <div class="catalog-card-deccription">
+                	<h3 class="card-title">
+                      <a href="#" class="item_link">Barbershop</a>
+                 </h3>
+                  <p class="card-info">Сайт салоны красоты.Для мужчин, да.</p>
+                  <a class="card-price btn">9900 Р.</a>
+              </div>
+            </div>
+            <div>
+              <img class="catalog-card-image" src="img/site-mishka.jpg" width="360" height="616" alt="Sedona">
+              <div class="catalog-card-deccription">
+                	<h3 class="card-title">
+                      <a href="#" class="item_link">Mishka</a>
+                 </h3>
+                  <p class="card-info">Интернет-магазин вязаных игрушек</p>
+                  <a class="card-price btn">9900 Р.</a>
+              </div>
+            </div>
+            <div>
+              <img class="catalog-card-image" src="img/site-aplus.jpg" width="360" height="616" alt="Sedona">
+              <div class="catalog-card-deccription">
+                	<h3 class="card-title">
+                      <a href="#" class="item_link">A Plus</a>
+                 </h3>
+                  <p class="card-info">Лендинг курсов повышения квалификации</p>
+                  <a class="card-price btn">9900 Р.</a>
+              </div>
+            </div>
+            <div>
+              <img class="catalog-card-image" src="img/site-kvast.jpg" width="360" height="616" alt="Sedona">
+              <div class="catalog-card-deccription">
+                	<h3 class="card-title">
+                      <a href="#" class="item_link">Kvast</a>
+                 </h3>
+                  <p class="card-info">Промо-сайт производителя крафтового кваса</p>
                   <a class="card-price btn">9900 Р.</a>
               </div>
             </div>
@@ -138,11 +200,12 @@
       </ul>
     <!-- </div> -->
     </section>
+  <!-- </div> -->
   </main>
   <footer class="main-footer">
     <div class="conteiner">
       <div class="map">
-        <img src="http://placehold.it/640x70/" width="1200" height="416" alt="Map">
+        <img src="img\map.jpg" width="1200" height="416" alt="Map">
       </div>
       <section class="footer-contact">
         <h2 class="contacts-title">Nerds Design Studio</h2>
