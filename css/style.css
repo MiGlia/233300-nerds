@@ -7,4 +7,34 @@ body {
   color: #000000;
   font-weight: 500;
   font-family: "Roboto", "Arial", sans-serif;
+  background-color: #ffffff;
+}
+.main-header-logo:hover {
+  opacity:0.8;
+}
+a {
+  text-decoration: none;
+}
+.main-header {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+}
+.header-menu,
+.user-menu {
+  list-style: none;
+}
+.header-menu a,
+.user-menu a {
+  color: #000000;
+}
+.header-menu a:hover,
+.user-menu a:hover {
+    color: #fb565a;
+}
+.header-menu a:focus,
+.user-menu a:focus {
+  color: #000000;
+  opacity: 0.3;
 }
