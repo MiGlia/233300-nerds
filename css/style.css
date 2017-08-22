@@ -12,6 +12,9 @@ body {
 .main-header-logo:hover {
   opacity:0.8;
 }
+.main-header-logo:active {
+  opacity:0.3;
+}
 a {
   text-decoration: none;
 }
@@ -30,11 +33,126 @@ a {
   color: #000000;
 }
 .header-menu a:hover,
-.user-menu a:hover {
+.header-menu a:focus,
+.user-menu a:hover,
+.user-menu a:focus {
     color: #fb565a;
 }
-.header-menu a:focus,
-.user-menu a:focus {
+.header-menu a:active,
+.user-menu a:active {
   color: #000000;
   opacity: 0.3;
+}
+.header-menu-сurrent {
+  border-bottom: 2px solid #fc565a;
+}
+.features-item {
+    list-style: none;
+}
+.features-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.features-item p {
+  color: #283136;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+.btn {
+  font: inherit;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px;
+}
+.btn-web-sites,
+ .btn-write-us {
+  background-color:#fb565a;
+  width: 140px;
+}
+.btn-apps-sites {
+  background-color:#00ca74;
+  width: 140px;
+}
+.btn-presentation-sites {
+  background-color:#efc84a;
+  width: 140px;
+}
+.btn-web-sites:hover,
+.btn-write-us:hover {
+  background-color:#e74246;
+}
+.btn-web-sites:focus,
+.btn-write-us:focus {
+  background-color:#e74246;
+}
+.btn-web-sites:active,
+.btn-write-us:active {
+  background-color: #d7373b;
+  color:rgba(255,255,255,0.3);
+}
+.btn-apps-sites:hover {
+  background-color:#00bc6c;
+}
+.btn-apps-sites:focus {
+  background-color:#00bc6c;
+}
+.btn-apps-sites:active {
+  background-color: #00aa62;
+  color:rgba(255,255,255,0.3);
+}
+.btn-presentation-sites:hover {
+  background-color:#eab534;
+}
+.btn-presentation-sites:focus {
+  background-color:#eab534;
+}
+.btn-presentation-sites:active {
+  background-color: #e5a722;
+  color:rgba(255,255,255,0.3);
+}
+.about-us-lead {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+.about-us-text,
+.about-us-content-list,
+.footer-social-slogan p {
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.about-us-content-list,
+.content-list-right {
+  list-style: none;
+}
+.about-us-content {
+  font-size: 16px;
+  font-weight: 700;
+}
+.about-us-right-info>p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.content-list-right {
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.footer-social-slogan b {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
 }
