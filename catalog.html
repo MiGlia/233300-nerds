@@ -23,7 +23,7 @@
             <a href="#">Клиенты</a>
           </li>
           <li>
-            <a class="header-menu-сurrent" href="#">Магазин</a>
+            <a class="header-menu-сurrent">Магазин</a>
           </li>
           <li>
             <a href="#">Контакты</a>
@@ -47,7 +47,7 @@
       <h2 class="visually-hidden">Рассчет стоимости:</h2>
       <form class="filter-price" action="#" method="get">
         <fieldset class="filter-range">
-           <legend class="filter-range-title">Стоимость:</legend>
+           <legend>Стоимость:</legend>
            <!-- <div class="range-controls">
              <div class="scale">
                <div class="bar"></div>
@@ -64,15 +64,15 @@
            <legend>Сетка:</legend>
            <ul>
              <li class="filter-group">
-               <input class="visually-hidden filter-grid filter-grid-radio" id="select-adaptive" type="radio" name="grid-select" value="adaptive" checked>
+               <input class="visually-hidden filter-input filter-grid-radio" id="select-adaptive" type="radio" name="grid-select" value="adaptive" checked>
                <label class="circle-icon" for="adaptive">Адаптивная</label>
               </li>
               <li class="filter-group">
-                <input class="visually-hidden filter-grid filter-grid-radio" id="select-fixid" type="radio" name="grid-select" value="fixid">
+                <input class="visually-hidden filter-input filter-grid-radio" id="select-fixid" type="radio" name="grid-select" value="fixid">
                 <label class="circle-icon" for="select-fixid">Фиксированная</label>
                </li>
                <li class="filter-group">
-                 <input class="visually-hidden filter-grid filter-grid-radio" id="select-stretch" type="radio" name="grid-select" value="stretch" disabled>>
+                 <input class="visually-hidden filter-input filter-grid-radio" id="select-stretch" type="radio" name="grid-select" value="stretch" disabled>
                  <label class="circle-icon" for="stretch">Резиновая</label>
                 </li>
            </ul>
@@ -81,24 +81,24 @@
            <legend>Особенности:</legend>
            <ul>
              <li class="filter-group">
-               <input class="visually-hidden filter-features filter-features-checkbox" id="select-slider" type="checkbox" name="slider" checked>
-               <lable class="icon-box" for="select-slider">Слайдер</label>
+               <input class="visually-hidden filter-input filter-features-checkbox" id="select-slider" type="checkbox" name="slider" checked>
+               <label class="icon-box" for="select-slider">Слайдер</label>
              </li>
              <li class="filter-group">
-               <input class="visually-hidden filter-features filter-features-checkbox"  id="select-block-features" type="checkbox" name="block-features">
+               <input class="visually-hidden filter-input filter-features-checkbox"  id="select-block-features" type="checkbox" name="block-features">
                <label class="icon-box" for="select-block-features">Блок преимуществ</label>
              </li>
              <li class="filter-group">
-              <input class="visually-hidden filter-features filter-features-checkbox" id="select-news" type="checkbox" name="news" checked>
+              <input class="visually-hidden filter-input filter-features-checkbox" id="select-news" type="checkbox" name="news" checked>
               <label class="icon-box" for="select-news">Новости</label>
              </li>
              <li class="filter-group">
-             <input class="visually-hidden filter-features filter-features-checkbox" id="select-gallery" type="checkbox" name="gallery">
+             <input class="visually-hidden filter-input filter-features-checkbox" id="select-gallery" type="checkbox" name="gallery">
              <label class="icon-box" for="select-gallery">Галлерея</label>
             </li>
             <li class="filter-group">
-            <input class="visually-hidden filter-features filter-features-checkbox" id="select-basket" type="checkbox" name="basket">
-            <label class="icon-box" for="select-basket">Корзина</labtl>
+            <input class="visually-hidden filter-input filter-features-checkbox" id="select-basket" type="checkbox" name="basket">
+            <label class="icon-box" for="select-basket">Корзина</label>
            </li>
           </ul>
         </fieldset>
@@ -108,7 +108,7 @@
     <!-- блок фильтров конец -->
     <section class="catalog">
       <h2 class="visually-hidden">Каталог шаблонов</h2>
-      <div class="catalog-sorting">
+      <div class="catalog-sorting">         <!-- может секция -->
         <b>Сортировка:</b>
         <ul class="result-menu">
           <li>
@@ -135,7 +135,7 @@
         <li class="catalog-card">
             <div>
               <img class="catalog-card-image" src="img/site-sedona.jpg" width="360" height="616" alt="Sedona">
-              <div class="catalog-card-deccription">
+              <div class="catalog-card-deccription">      <!-- может секция -->
                 	<h3 class="card-title">
                       <a href="#" class="item_link">Sedona</a>
                  </h3>
@@ -144,7 +144,7 @@
               </div>
             </div>
             <div>
-              <img class="catalog-card-image" src="img/site-pink.jpg" width="360" height="616" alt="Sedona">
+              <img class="catalog-card-image" src="img/site-pink.jpg" width="360" height="616" alt="Pink App">
               <div class="catalog-card-deccription">
                 	<h3 class="card-title">
                       <a href="#" class="item_link">Pink App</a>
@@ -154,7 +154,7 @@
               </div>
             </div>
             <div>
-              <img class="catalog-card-image" src="img/site-barbershop.jpg" width="360" height="616" alt="Sedona">
+              <img class="catalog-card-image" src="img/site-barbershop.jpg" width="360" height="616" alt="Barbershop">
               <div class="catalog-card-deccription">
                 	<h3 class="card-title">
                       <a href="#" class="item_link">Barbershop</a>
@@ -164,23 +164,23 @@
               </div>
             </div>
             <div>
-              <img class="catalog-card-image" src="img/site-mishka.jpg" width="360" height="616" alt="Sedona">
+              <img class="catalog-card-image" src="img/site-mishka.jpg" width="360" height="616" alt="Mishka">
               <div class="catalog-card-deccription">
                 	<h3 class="card-title">
                       <a href="#" class="item_link">Mishka</a>
                  </h3>
                   <p class="card-info">Интернет-магазин вязаных игрушек</p>
-                  <a class="card-price btn">9900 Р.</a>
+                  <a class="btn btn-card">9900 Руб.</a>
               </div>
             </div>
             <div>
-              <img class="catalog-card-image" src="img/site-aplus.jpg" width="360" height="616" alt="Sedona">
+              <img class="catalog-card-image" src="img/site-aplus.jpg" width="360" height="616" alt="A Plus">
               <div class="catalog-card-deccription">
                 	<h3 class="card-title">
                       <a href="#" class="item_link">A Plus</a>
                  </h3>
                   <p class="card-info">Лендинг курсов повышения квалификации</p>
-                  <a class="card-price btn">9900 Р.</a>
+                  <a class="btn btn-card">9900 Руб.</a>
               </div>
             </div>
             <div>
@@ -190,14 +190,14 @@
                       <a href="#" class="item_link">Kvast</a>
                  </h3>
                   <p class="card-info">Промо-сайт производителя крафтового кваса</p>
-                  <a class="card-price btn">9900 Р.</a>
+                  <a class="btn btn-card">9900 Руб.</a>
               </div>
             </div>
         </li>
       </ul>
       <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a>2</a></li>
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
       </ul>
