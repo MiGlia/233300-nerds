@@ -81,9 +81,6 @@ a {
   opacity: 0.3;
   color: #000000;
 }
-.header-menu-сurrent {
-  border-bottom: 2px solid #fc565a;
-}
 .features-item {
     margin: 0;
     padding: 0;
@@ -417,7 +414,6 @@ a {
   padding: 7px 20px 0px 28px;
 
   vertical-align: middle;
-;
 }
 .user-menu {
   display: flex;
@@ -447,6 +443,22 @@ a {
   background-position: 0 0;
 
 }
+.header-menu-сurrent {
+  position: relative;
+}
+.header-menu-сurrent::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 28px;
+
+  /*height: 2px;*/
+
+  /*background-color: #fb565a;*/
+  border-bottom: 2px solid #fb565a;
+}
+
 .slide {
   display: flex;
 
