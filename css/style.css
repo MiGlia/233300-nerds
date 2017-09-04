@@ -711,39 +711,28 @@ a {
 .portfolio-list li:nth-child(3) {
   padding-right: 121px;
 }
-
-/*.portfolio-list li::after {
-position: absolute;
-content: "";
-height: 52px;
-width: 2px;
-border-right: 2px solid red;
-}*/
-/*.border {
-border-right: 2px solid red;
-
-}*/
-/*.portfolio-image {
-position: relative;
+.portfolio-list li {
+  position: relative;
 }
-.portfolio-image p::before{
+.portfolio-list li::after {
 position: absolute;
 content: "";
 height: 52px;
 width: 2px;
-border-right: 2px solid red;
-}*/
+top:0;
+background-color: red;
+}
+
+
 
 /*карта*/
 .map {
   min-height: 416px;
   margin-bottom: 60px;
-
-  background-color:  #e9e5dc;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  /*width: 100%;*/
+  width: 100%;
   background-size: 100%;
 }
 .main-footer {
@@ -1122,3 +1111,10 @@ border-right: 2px solid red;
 .catalog-card:hover .catalog-card-deccription {
   display: block;
 }
+.img-map {
+  height: 416px;
+}
+/*.img-map-conteiner {
+  display: flex;
+  justify-content: center;
+}*/
