@@ -351,6 +351,12 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  min-width: 50px;
+  height: 50px;
+  display: flex;
+   align-items: center;
+  justify-content: center;
+  margin-right: 11px;
 }
 .pagination-item a:hover {
   background-color: #dfdfdf;
@@ -365,6 +371,7 @@ a {
 .pagination-item-current a  {
   border: 2px solid #dcdcdc;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
@@ -1017,6 +1024,57 @@ background-color: red;
   border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
+}
+.filter-group input[type="checkbox"] + label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  content: "";
+
+  background-image: url("../svg-nerds/checkbox-off.svg");
+  opacity: 0.4;
+}
+.filter-group input[type="checkbox"]:checked + label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  content: "";
+
+  background-image: url("../svg-nerds/checkbox-on.svg");
+}
+.filter-group input[type="checkbox"]:focus + label::before,
+.filter-group input[type="checkbox"]:hover + label::before {
+  opacity: 1;
+}
+.filter-price .filter-button {
+  box-sizing: border-box;
+  padding: 19px 88px 18px 89px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.125;
+  background-color: #eeeeee;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  outline: none;
+}
+.filter-button:focus,
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+.filter-button:active {
+  color: rgba(0,0,0, 0.3);
+      box-shadow: 0 -3px 0 0 #b5b5b5;
+      background-color: #d5d5d5;
 }
 .catalog-sorting b {
   text-transform: uppercase;
