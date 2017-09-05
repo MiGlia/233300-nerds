@@ -63,7 +63,7 @@
                 <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="grid-select">
               <legend>Сетка:</legend>
               <ul>
                 <li class="filter-group">
@@ -80,7 +80,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="special-select">
               <legend>Особенности:</legend>
               <ul>
                 <li class="filter-group">
@@ -127,12 +127,12 @@
             <ul class="arrow">
               <li>
                 <a class="arrow-result-menu" href="#" title="По возрастанию">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
                 </a>
               </li>
               <li>
                 <a class="arrow-result-menu сurrent-arrow" href="#" title="По убыванию">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
                 </a>
               </li>
             </ul>
@@ -252,8 +252,14 @@
         </section>
       </div>
     </footer>
-    <div class="modal-window">
-      <div class="modal-write-us">
+
+      <section class="modal-write-us">
+        <!-- <div class="modal modal-write-us-win"> -->
+        <button class="modal-close" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+          </svg>
+          Закрыть
+        </button>
         <h1>Напишите нам</h1>
         <form action="#" method="post">
           <div class="user-info">
@@ -266,7 +272,8 @@
           <textarea name="comments" id="write-your-comment" cols="100" rows="10" placeholder="В свободной форме"></textarea>
           <button class="btn btn-send" type="submit">Отправить</button>
         </form>
-      </div>
-    </div>
+        <!-- </div> -->
+      </section>
+
   </body>
   </html>
