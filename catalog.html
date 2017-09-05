@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Nerds - Каталог</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -56,7 +56,6 @@
                 </div>
                 <div class="toggle toggle-min"></div>
                 <div class="toggle toggle-max"></div>
-
               </div>
               <div class="price-controls">
                 <label class="min-price">от <input name="min-price" type="text" value="0"></label>
@@ -211,12 +210,10 @@
     </div>
   </main>
   <footer class="main-footer">
-
     <div class="map">
       <img src="img/map.jpg" width="1440" height="416" alt="Map">
     </div>
     <div class="container">
-
       <section class="footer-contact">
         <h2 class="contacts-title">Nerds Design Studio</h2>
         <p>191186, Санкт-Петербург,<br>
@@ -252,28 +249,33 @@
         </section>
       </div>
     </footer>
-
-      <section class="modal-write-us">
-        <!-- <div class="modal modal-write-us-win"> -->
-        <button class="modal-close" type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
-          </svg>
-          Закрыть
-        </button>
-        <h1>Напишите нам</h1>
-        <form action="#" method="post">
-          <div class="user-info">
+    <section class="modal-write-us">
+      <!-- <div class="modal modal-write-us-win"> -->
+      <button class="modal-close" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+        </svg>
+        Закрыть
+      </button>
+      <h2>Напишите нам</h2>
+      <form action="#" method="post">
+        <div class="user-info">
+          <p>
             <label class="write-us-name" for="write-your-name">Ваше имя:</label>
             <input  id="write-your-name" type="text" name="write-name" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p>
             <label class="write-us-email" for="write-your-email">Ваш e-mail:</label>
             <input  id="write-your-email" type="text" name="write-email" placeholder="Для отправки ответа">
-          </div>
+          </p>
+        </div>
+        <p class="comment">
           <label for="write-your-comment">Текст письма:</label>
-          <textarea name="comments" id="write-your-comment" cols="100" rows="10" placeholder="В свободной форме"></textarea>
-          <button class="btn btn-send" type="submit">Отправить</button>
-        </form>
-        <!-- </div> -->
-      </section>
+          <textarea name="comments" id="write-your-comment" cols="100" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="btn btn-send" type="submit">Отправить</button>
+      </form>
+      <!-- </div> -->
+    </section>
 
   </body>
   </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Nerds - Главная</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -124,16 +124,13 @@
           <tbody>
             <tr>
               <td class="number-percentages">
-                146
-                <span class="percentages">%</span>
+                146<sup class="percentages">%</sup>
               </td>
               <td class="number-percentages">
-                100
-                <span class="percentages">%</span>
+                100<sup class="percentages">%</sup>
               </td>
               <td class="number-percentages">
-                50
-                <span class="percentages">%</span>
+                50<sup class="percentages">%</sup>
               </td>
             </tr>
             <tr>
@@ -149,11 +146,10 @@
       <h2 class="visually-hidden">Наши Работы</h2>
       <ul class="portfolio-list">
         <li>
-          <!-- <div class="border" -->
           <a class="portfolio-image" href="#">
-            <img src="img\html-academy-pertners.png" width="199" height="68" alt="Html Academy">
+            <img src="img/html-academy-pertners.png" width="199" height="68" alt="Html Academy">
           </a>
-          <!-- </div> -->
+
         </li>
         <li>
           <a class="portfolio-image" href="#">
@@ -175,13 +171,7 @@
     <!-- </div> -->
   </main>
   <footer class="main-footer">
-
-     <!-- <div class="map">  -->
-     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124016!2d30.320894616127813!3d59.93879686904786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1504125531020" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <!-- </div> -->
-<!-- <div class="img-map-conteiner">
-    <img class="img-map" src="img/map.jpg" width="1440" height="416" alt="map">
-</div> -->
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124016!2d30.320894616127813!3d59.93879686904786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1504125531020" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
     <div class="container">
       <section class="footer-contact">
         <h2 class="contacts-title">Nerds Design Studio</h2>
@@ -218,21 +208,33 @@
         </section>
       </div>
     </footer>
-    <div class="modal-window">
-      <div class="modal-write-us">
-        <h1>Напишите нам</h1>
-        <form action="#" method="post">
-          <div class="user-info">
+    <section class="modal-write-us">
+      <!-- <div class="modal modal-write-us-win"> -->
+      <button class="modal-close" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+        </svg>
+        Закрыть
+      </button>
+      <h2>Напишите нам</h2>
+      <form action="#" method="post">
+        <div class="user-info">
+          <p>
             <label class="write-us-name" for="write-your-name">Ваше имя:</label>
             <input  id="write-your-name" type="text" name="write-name" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p>
             <label class="write-us-email" for="write-your-email">Ваш e-mail:</label>
             <input  id="write-your-email" type="text" name="write-email" placeholder="Для отправки ответа">
-          </div>
+          </p>
+        </div>
+        <p class="comment">
           <label for="write-your-comment">Текст письма:</label>
-          <textarea name="comments" id="write-your-comment" cols="100" rows="10" placeholder="В свободной форме"></textarea>
-          <button class="btn btn-send" type="submit">Отправить</button>
-        </form>
-      </div>
-    </div>
+          <textarea name="comments" id="write-your-comment" cols="100" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="btn btn-send" type="submit">Отправить</button>
+      </form>
+      <!-- </div> -->
+    </section>
+
   </body>
   </html>
