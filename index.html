@@ -14,7 +14,6 @@
         <a class="main-header-logo">
           <img src="svg-nerds/nerds-logo.svg" width="160" height="65" alt="nerds-logo">
         </a>
-
         <ul class="header-menu">
           <li>
             <a href="#">Студия</a>
@@ -233,49 +232,49 @@
         <button class="btn btn-send" type="submit">Отправить</button>
       </form>
     </section>
-  <script>
-  var link = document.querySelector(".btn-write-us");
+    <script>
+    var link = document.querySelector(".btn-write-us");
 
-  var popup = document.querySelector(".modal-write-us");
+    var popup = document.querySelector(".modal-write-us");
 
-  var close = popup.querySelector(".modal-close");
+    var close = popup.querySelector(".modal-close");
 
-  var myname = popup.querySelector("[name=write-name]");
+    var myname = popup.querySelector("[name=write-name]");
 
-  var form = popup.querySelector("form");
+    var form = popup.querySelector("form");
 
-  var mail = popup.querySelector("[name=write-email]");
+    var mail = popup.querySelector("[name=write-email]");
 
-  var storage = localStorage.getItem("myname");
+    var storage = localStorage.getItem("myname");
 
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    if (storage) {
-      myname.value = storage;
-      mail.focus();
-    }
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+      if (storage) {
+        myname.value = storage;
+        mail.focus();
+      }
       else {
         myname.focus();
       }
 
-  });
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-
-  });
-  form.addEventListener("submit", function (evt) {
-    if (!mail.value || !myname.value) {
+    });
+    close.addEventListener("click", function (evt) {
       evt.preventDefault();
-      console.log("Нужно ввести имя и почту")
-} else {
-  LocalStorage.setItem("myname", myname.value);
+      popup.classList.remove("modal-show");
 
-}
+    });
+    form.addEventListener("submit", function (evt) {
+      if (!mail.value || !myname.value) {
+        evt.preventDefault();
+        console.log("Нужно ввести имя и почту")
+      } else {
+        LocalStorage.setItem("myname", myname.value);
 
-  })
+      }
 
-</script>
+    })
+
+    </script>
   </body>
   </html>
