@@ -517,7 +517,7 @@ a {
 }
 .slide-control {
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
   bottom: 113px;
   left:50%;
 
@@ -631,11 +631,6 @@ a {
   text-align:center;
 
   background-color: #fb565a;
-}
-.slide-img {
-  width: 698;
-  height: 413px;
-  padding-left: 30px;
 }
 
 .features-item {
@@ -753,10 +748,32 @@ a {
 .portfolio-list li {
   position: relative;
 }
-.portfolio-list li::after {
+.portfolio-list li:nth-child(2)::after {
   position: absolute;
-  top:0;
+  top:20px;
+  left: -46px;
+  width: 2px;
+  height: 52px;
 
+  content: "";
+
+  background-color: red;
+}
+.portfolio-list li:nth-child(3)::after {
+  position: absolute;
+  top:0px;
+  left: -60px;
+  width: 2px;
+  height: 52px;
+
+  content: "";
+
+  background-color: red;
+}
+.portfolio-list li:nth-child(4)::after {
+  position: absolute;
+  top:15px;
+  left: -60px;
   width: 2px;
   height: 52px;
 
@@ -784,7 +801,7 @@ a {
 }
 .footer-contact {
   position: absolute;
-  z-index: 100;
+  /*z-index: 100;*/
   top: 54px;
 
   display: flex;
@@ -886,20 +903,23 @@ a {
   margin-top: 8px;
 }
 /*модальное окно========================================================*/
-
 .modal-write-us {
   position:fixed ;
-  z-index: 1001;
-  bottom: 120px;
-  left: 50%;
+  /*z-index: 300;*/
+  /*top: 0;
+  left: 50%;*/
 
   display: none;
 
   box-sizing: border-box;
   width: 960px;
+
   padding: 30px 100px 85px 100px;
 
-  transform: translateX(-50%);
+  /*transform: translateX(-50%);*/
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
   color: #000000;
   background-color: #ffffff;
@@ -907,6 +927,10 @@ a {
 }
 .modal-show {
   display: block;
+  animation: bounce 0.9s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 .modal-close {
   position: absolute;
@@ -919,6 +943,44 @@ a {
   background-color: #ffffff;
 
   font-size: 0;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 .modal-write-us h2{
   margin-bottom: 25px;

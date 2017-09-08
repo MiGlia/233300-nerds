@@ -35,6 +35,7 @@
         </ul>
       </nav>
       <section class="slider">
+
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
         <input type="radio" id="btn-3" name="toggle">
@@ -42,7 +43,7 @@
           <div class="slide">
             <div class="slide-content-text">
               <p class="slide_slogan">Долго, дорого, скрупулезно.</p>
-              <p class="slide_text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <p class="slide_text">Математически выверенный дизайн<br>Математически выверенный дизайн<br>Математически выверенный дизайн<br>Математически выверенный дизайн<br>Математически выверенный дизайн<br>Математически выверенный дизайн<br>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
               <a class="btn slide_btn" href="#">Узнать больше</a>
             </div>
           </div>
@@ -66,6 +67,7 @@
           <label for="btn-2"></label>
           <label for="btn-3"></label>
         </div>
+
       </section>
     </div>
   </header>
@@ -232,49 +234,7 @@
         <button class="btn btn-send" type="submit">Отправить</button>
       </form>
     </section>
-    <script>
-    var link = document.querySelector(".btn-write-us");
 
-    var popup = document.querySelector(".modal-write-us");
-
-    var close = popup.querySelector(".modal-close");
-
-    var myname = popup.querySelector("[name=write-name]");
-
-    var form = popup.querySelector("form");
-
-    var mail = popup.querySelector("[name=write-email]");
-
-    var storage = localStorage.getItem("myname");
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-      if (storage) {
-        myname.value = storage;
-        mail.focus();
-      }
-      else {
-        myname.focus();
-      }
-
-    });
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-
-    });
-    form.addEventListener("submit", function (evt) {
-      if (!mail.value || !myname.value) {
-        evt.preventDefault();
-        console.log("Нужно ввести имя и почту")
-      } else {
-        LocalStorage.setItem("myname", myname.value);
-
-      }
-
-    })
-
-    </script>
+    <script src="js/popup.js"></script>
   </body>
   </html>
